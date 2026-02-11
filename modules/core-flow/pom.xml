@@ -12,4 +12,12 @@
 
     <artifactId>core-flow</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.incri</groupId>
+            <artifactId>core-contract</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
 </project>

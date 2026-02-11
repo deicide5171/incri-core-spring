@@ -9,8 +9,10 @@
   <packaging>pom</packaging>
 
   <modules>
+    <module>modules/core-common</module>
     <module>modules/core-contract</module>
     <module>modules/core-flow</module>
+    <module>modules/core-security</module>
     <module>modules/core-web</module>
   </modules>
 

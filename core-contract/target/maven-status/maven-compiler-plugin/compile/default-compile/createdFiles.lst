@@ -1,0 +1,4 @@
+com\incri\core\contract\event\DomainEvent.class
+com\incri\core\contract\error\ErrorCode.class
+com\incri\core\contract\query\Query.class
+com\incri\core\contract\command\Command.class

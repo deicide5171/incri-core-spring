@@ -9,16 +9,18 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>modules/core-common</module>
-    <module>modules/core-contract</module>
-    <module>modules/core-flow</module>
-    <module>modules/core-security</module>
-    <module>modules/core-web</module>
+    <module>core-common</module>
+    <module>core-contract</module>
+    <module>core-flow</module>
+    <module>core-security</module>
+    <module>core-web</module>
   </modules>
 
   <properties>
     <java.version>17</java.version>
     <spring.boot.version>2.7.18</spring.boot.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
 
   <dependencyManagement>
@@ -32,4 +34,19 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <release>17</release>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
